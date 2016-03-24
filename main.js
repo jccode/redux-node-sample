@@ -3,4 +3,5 @@ require('babel-register')({
     presets: [ 'es2015' ]
 });
 
-require('./index');
+require('./ex2/index');
+
