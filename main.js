@@ -5,5 +5,5 @@ require('babel-register')({
     plugins: ["syntax-async-functions", "transform-async-to-generator"]
 });
 
-require('./es7/index');
+require('./fsa/index');
 
