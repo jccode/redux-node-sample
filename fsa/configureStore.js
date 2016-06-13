@@ -4,7 +4,7 @@ import promiseMiddleware from 'redux-promise'
 import reducer from './reducers';
 
 
-const loggerMiddleware = createLogger()
+const loggerMiddleware = createLogger({colors: {}})
 
 export default function configureStore(initalState) {
     return createStore(

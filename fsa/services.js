@@ -3,7 +3,7 @@ import fetch from 'node-fetch';
 
 const PAGE_SIZE = 10;
 
-const _fetch = async (url, options = {}) => {
+const get = async (url, options = {}) => {
     const response = await fetch(url, options);
     if(response.status == 203) {
         console.log("You haven't login yet. Please login first!")
