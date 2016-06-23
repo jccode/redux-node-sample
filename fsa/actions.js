@@ -6,4 +6,6 @@ const increment = createAction("INCREMENT", amount => amount);
 
 const fetchGist = createAction("FETCH_GIST", ()=>api.gist());
 
-export { increment, fetchGist }
+const fetchLicaiProducts = createAction("FETCH_LICAI_PRODUCTS", api.products);
+
+export { increment, fetchGist, fetchLicaiProducts }

@@ -15,6 +15,6 @@ const get = async (url, options = {}) => {
 };
 
 export default {
-    products: (pageNum) => fetch(`http://test.dianjinhe.com/api/finance/product/getList?pageNum=${pageNum}&pageSize=${PAGE_SIZE}`),
-    gist: () => fetch("https://api.github.com/gists/public")
+    products: pageNum => get(`http://test.dianjinhe.com/api/finance/product/getList?pageNum=${pageNum}&pageSize=${PAGE_SIZE}`),
+    gist: () => get("https://api.github.com/gists/public")
 }
